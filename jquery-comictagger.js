@@ -9,7 +9,7 @@
     var defaults = {
       cl:31,
       class_button:"comictag_button",
-      separator:" | ",
+      separator:"&nbsp;&nbsp;|&nbsp;&nbsp;",
       class_tag:"add_tag",        //equivalent of imgTag
       class_tagged:"is_tagged",
       class_clearoff:"clear_off", //imgClearOff
@@ -19,11 +19,11 @@
       class_info:"info",          //imgInfo
       comic_dir:"/",              //comicDir
       text_tag:"Tag this comic",
-      text_tagged:"This comic is tagged",
-      text_goto:"Goto tag",
+      text_tagged:"Tagged",
+      text_goto:"Go to tag",
       text_clear:"Clear tag",
       text_info:"Info?",
-      text_info_pop:"To remember where you are, select 'Tag this comic', then later select 'Go to tag' to return to where you left off."
+      text_info_pop:<span class='mx-sans bold caps'>"What is this?</span><br /><br />This feature allows you to &#8220;tag&#8221; or bookmark where you are in the <i>Multiplex</i> archives.<br /><br />To save your place, just click on &#8216;Tag This Comic&#8217;! Next time you return, you can easily keep reading from where you left off by clicking on &#8216;Go to Tag.&#8217;<br /><br />This is useful for reading (or re-reading!) the archives in multiple sittings, or if you only visit the site every now and then.<br/><br/><i>NOTE: If&nbsp;you tag the front page of the site, it&nbsp;will save the current strip!</i>
     };
     var options = $.extend(defaults, _options);
     if (!options.location){
