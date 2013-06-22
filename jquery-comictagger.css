@@ -1,60 +1,17 @@
-._comictagger
-{
-  position:relative; /* so we can absolutely position the info pop relative to this container*/
-}
-._comictagger span
-{
-  cursor:pointer; /* because it's not using a tags, this doesn't happen automagically */
-}
+/* START TAGGER */
+._comictagger { position: relative; }
+._comictagger span { text-transform:uppercase; text-decoration: none; font-weight:700; color:#000; font-size:1.08em }
+._comictagger .ct_pop { position:absolute; font-size:1em; padding:.5em; left:250px; top:-282px; font-family:Georgia, "Times New Roman", Times, serif; width:250px; background-color:#FFF; text-transform:none; border:2px solid #D0E6BE; text-align:left }
+._comictagger .ct_tag { display:inline; color: #070; text-decoration: none; cursor:pointer }
+._comictagger .ct_tag:hover { display:inline; color: #070; text-decoration: underline; cursor:pointer }
+._comictagger .ct_tag:active { color: #8BC53F; text-decoration: underline; cursor:pointer }
+._comictagger.ct_is_tagged .ct_tag{ display:none; }
+._comictagger .ct_tagged { display:none; }
+._comictagger.ct_is_tagged .ct_tagged{ display:inline; color: #000; text-decoration: none; cursor:pointer; }
 
-._comictagger span.ct_tagged
-{
-    cursor:default;
-}
-._comictagger .ct_pop /* this is functional, but fairly ugly. Pretty it up.*/
-{
-  position:absolute;
-  border:1px solid #000;
-  background-color:#fff;
-  padding:8px;
-}
-
-._comictagger .ct_tag{
-    display:inline;
-}
-._comictagger.ct_is_tagged .ct_tag{
-    display:none;
-}
-
-._comictagger .ct_tagged{
-    display:none;
-}
-._comictagger.ct_is_tagged .ct_tagged{
-    display:inline;
-}
-
-/* these are just some basic styles to convince myself it's working */
-._comictagger .add_tag
-{
-  font-weight:bold;
-}
-._comictagger .clear_off
-{
-  text-decoration:line-through;
-}
-._comictagger .goto_off
-{
-  text-decoration:line-through;
-}
-._comictagger .clear_on
-{
-  text-decoration:underline;
-}
-._comictagger .goto_on
-{
-  text-decoration:underline;
-}
-._comictagger .info
-{
-  font-style:italic;
-}
+._comictagger .clear_off, ._comictagger .goto_off { color: #000; text-decoration: none; cursor:default }
+._comictagger .clear_on, ._comictagger .goto_on { color: #070; text-decoration: none; cursor:pointer }
+._comictagger .clear_on:hover, ._comictagger .goto_on:hover { text-decoration: underline }
+._comictagger .info { color:red }
+._comictagger .info:hover { text-decoration: underline }
+/* END TAGGER */
